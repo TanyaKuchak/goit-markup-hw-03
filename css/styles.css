@@ -257,6 +257,14 @@ address {
 }
 
 /*-- PORTFOLIO -- */
+.section-btn{
+  margin-bottom: 50px;
+}
+                            <section class="team-card">.
+.portfolio-card{
+padding-top: 20px;
+padding-bottom: 20px;
+}
 .portfolio-btn {
   border: none;
   background-color: var(--sec-bg-color);
@@ -280,6 +288,7 @@ address {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
   color: var(--primary-font-color);
 }
 .content-text {
