@@ -10,6 +10,7 @@
   --footer-bg-color: #2f303a;
   --btn-bg-color: #188ce8;
   --logo-font-color: #2196f3;
+  --content-list-gap: 30px;
 }
 
 p,
@@ -57,10 +58,11 @@ body {
 
 .container {
   width: 1200px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .list {
@@ -75,9 +77,9 @@ body {
   color: var(--primary-font-color);
 
   font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
 }
 
 .section {
@@ -100,15 +102,19 @@ margin-right: 0;
   display: flex;
   align-items: center;
 }
+
 .header-list .item +.item{
   margin-left: 50px;
 }
+
 .header-info-list .item +.item{
   margin-left: 50px;
 }
+
 .header {
-  background-color: #ccc;
+border-bottom: 1px solid #ECECEC
 }
+
 .header-nav {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -127,6 +133,7 @@ margin-right: 0;
   letter-spacing: 0.02em;
   
 }
+
 span {
   color: var(--logo-font-color);
 
@@ -134,7 +141,8 @@ span {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  }
+}
+
 .header-logo {
   margin-right: 93px;
   color: var(--color-black); 
@@ -143,19 +151,23 @@ span {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  }
-  .header-connect{
-    margin-left: auto;
-  }
+}
+
+.header-connect{
+  margin-left: auto;
+}
+
 .header-list,
 .link:hover,
 .header-list,
 .link:focus {
   color: var(--accent-color);
 }
+
 .header-info-list{
   display: flex;
 }
+
 .header-info,
 .header-tel {
   font-weight: 500;
@@ -164,12 +176,14 @@ span {
   letter-spacing: 0.02em;
   color: var(--sec-font-color);
 }
+
 .header-info:hover,
 .header-info:focus,
 .header-tel:hover,
 .header-tel:focus {
   color: var(--accent-color);
 }
+
 .header-list .link.current {
   color: var(--accent-color);
 }
@@ -185,6 +199,7 @@ span {
   background-color: var(--footer-bg-color);
   text-align: center;
 }
+
 .hero-title {
   margin-bottom: 40px;
   min-width: 696px;
@@ -199,6 +214,7 @@ span {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
 .button {
   min-width: 200px;
   height: 50px;
@@ -208,12 +224,17 @@ span {
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
+  background: var(--logo-font-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
   /* color: var(--color-white); */
 }
+
 .button.primary {
   background-color: var(--accent-color);
   color: var(--color-white);
 }
+
 .button.primary:hover,
 .button.primary :focus {
   background-color: var(--btn-bg-color);
@@ -234,13 +255,13 @@ span {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
- 
+
 .about-list {
   display: flex;
 }
 
 .about-list .about-item +.about-item{
-  margin-left: 30px;
+  margin-left: var(--content-list-gap);
 }
 
 .about-top-text {
@@ -259,17 +280,18 @@ span {
   color: var(--info-font-color);
 }
 
-
-
-
 /*-- WORK -- */
 
 .work-list{
   display: flex;
 }
 
+.work{
+  padding-top: 0;
+}
+
 .work-list .work-item +.work-item{
-  margin-left: 30px;
+  margin-left: var(--content-list-gap);
 }
 
 .work-title {
@@ -281,7 +303,7 @@ span {
   color: var(--primary-font-color);
 }
 
-/*-- TEAM         -- */
+/* -- TEAM         -- */
 .team { 
   background-color: var(--sec-bg-color);
   padding-top: 0;
@@ -294,11 +316,14 @@ span {
   line-height: 1.18;
   margin-bottom: 10px;
 }
+
 .team-list .team-item +.team-item{
-  margin-left: 30px;
+  margin-left: var(--content-list-gap);
 }
+
 .team-list {
   display: flex;
+  justify-content: center;
 }
 
 .team-text {
@@ -306,23 +331,28 @@ span {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-   color: var(--info-font-color);
+  color: var(--info-font-color);
 }
+
 .team-card{
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: var(--content-list-gap);
+  padding-bottom: var(--content-list-gap);
 }
+
 .team-title{
   margin-bottom: 50px;
 }
+
 /*--  FOOTER -- */
 footer {
   background-color: var(--footer-bg-color);
 }
+
 .footer-container { 
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer-logo {
   font-family: 'Raleway';
   font-weight: 700;
@@ -331,39 +361,69 @@ footer {
   color: var(--color-white);
   margin-bottom: 20px;
 }
+
 address {
   font-style: normal;
 }
+
 .contacts-address {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   color: var(--info-font-color);
- 
 }
+
 .contacts-link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
     color: var(--color-white);
 }
+
 .contacts-item{
   margin-bottom: 9px;
 }
+
 .contacts-address-list{
   margin-top: 20px;
 }
 
-/*-- PORTFOLIO -- */
+/*--       PORTFOLIO    -- */
+.content-list> .content-item{
+  flex-basis: calc(100%/3-30px);
+  margin-left: var(--content-list-gap);
+  margin-top: var(--content-list-gap);
+}
+
+.content-list{
+padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: calc(-1 * var(--content-list-gap));
+  margin-left: calc(-1 * var(--content-list-gap));
+}
+
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+}
+
 .section-btn{
   margin-bottom: 50px;
 }
-                            <section class="team-card">.
-.portfolio-card{
-padding-top: 20px;
-padding-bottom: 20px;
+
+.portfolio-list .portfolio-item+.portfolio-item{
+  margin-left: 8px;
 }
+
 .portfolio-btn {
+  padding-top: 8px;
+  padding-right: 22px;
+  padding-bottom: 8px;
+  padding-left: 22px;
   border: none;
   background-color: var(--sec-bg-color);
   font-family: 'Roboto';
@@ -375,12 +435,22 @@ padding-bottom: 20px;
   letter-spacing: 0.03em;
   cursor: pointer;
   color: var(--primary-font-color);
+  background: var(--logo-font-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+} 
+
+.portfolio-card {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   color: var(--color-white);
   background-color: var(--accent-color);
 }
+
 .content-top-text {
   font-weight: 700;
   font-size: 18px;
@@ -389,9 +459,12 @@ padding-bottom: 20px;
   margin-bottom: 4px;
   color: var(--primary-font-color);
 }
+
 .content-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   color: var(--info-font-color);
 }
+
+
