@@ -4,19 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework1</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Homework1</title>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/react-modal/3.15.1/react-modal.min.js"
-      integrity="sha512-QfthGCy33Nf12pEVAuNfe0kWBVbuVLE+/FdWYt21cBJlnBhlSik0k/3c29rp43PkdhF2Y2unTr7MgI121qvcRQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+    
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -48,8 +44,10 @@
     <main>
       <!--                 HERO                  -->
       <section class="hero">
-                  <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+        <div class="container">
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button class="button primary">Заказать услугу</button>
+          </div>
             </section>
       <!--                      ABOUT                -->
       <section class="about section">
@@ -117,10 +115,10 @@
                 width="270"
                 height="260"
               />
-              <section class="team-card">
-              <h3 class="team-top-text">Игорь Демьяненко</h3>
+              <div class=" team-card">
+                            <h3 class="team-top-text">Игорь Демьяненко</h3>
               <p class="team-text" lang="en">Product Designer</p>
-              </section>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -129,10 +127,10 @@
                 width="270"
                 height="260"
               />
-              <section class="team-card">
+              <div class="team-card">
               <h3 class="team-top-text">Ольга Репина</h3>
               <p class="team-text" lang="en">Frontend Developer</p>
-              </section>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -141,10 +139,10 @@
                 width="270"
                 height="260"
               />
-              <section class="team-card">
+              <div class=" team-card">
               <h3 class="team-top-text">Николай Тарасов</h3>
               <p class="team-text" lang="en">Marketing</p>
-              </section>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -153,10 +151,10 @@
                 width="270"
                 height="260"
               />
-              <section class="team-card">
+              <div class=" team-card">
               <h3 class="team-top-text">Михаил Ермаков</h3>
               <p class="team-text" lang="en">UI Designer</p>
-              </section>
+              </div>
             </li>
           </ul>
         </div>
@@ -167,7 +165,7 @@
       <div class="container footer-container">
         <a class="footer-logo logo"><span class="logo-accent logo">Web</span>Studio</a>
         <address class="contacts-address">
-          <ul class="contacts-address-list list">
+          <ul class="contacts-list list">
             <li class="contacts-item">
               <a
                 class="contacts-link link"
