@@ -68,7 +68,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .list {
@@ -189,15 +189,11 @@ span {
 .header-tel:focus {
   color: var(--accent-color);
 }
-
-.header-list>.link.current {
-  color: var(--accent-color);
+.current{
+  color: var(--accent-color)
 }
 
 /*--              HERO              -- */
-/* .hero{
-display: block;
-} */
 
 .hero> .container{
   display: flex;
@@ -236,7 +232,6 @@ display: block;
   letter-spacing: 0.06em;
   cursor: pointer;
   background: var(--logo-font-color);
-  box-shadow: 0px 4px 4px;
   border-radius:  4px;
   /* color: var(--color-white); */
 }
@@ -366,8 +361,8 @@ footer {
 .footer-logo {
   font-family: 'Raleway';
   font-weight: 700;
-  font-size:  26px;
-  line-height: ; 1.17;
+   font-size:  26px;
+  lh 1.17;
   color: var(--color-white);
 }
 
@@ -456,8 +451,8 @@ padding: 0;
   padding-bottom: 20px;
 }
 
-.portfolio-btn: hover,
-.portfolio-btn: focus {
+.portfolio-btn:hover,
+.portfolio-btn:focus {
   color: var(--color-white);
   background-color: var(--accent-color);
 }
