@@ -202,7 +202,8 @@ display: block;
 .hero> .container{
   display: flex;
   flex-direction: column;
-  padding: 200px 452px 200px 452px;
+  padding-top: 200px ;
+  padding-bottom: 200px;
   align-items: center;
   justify-content: center;
   background-color: var(--footer-bg-color);
