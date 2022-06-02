@@ -218,6 +218,7 @@ span {
   padding-top: 200px ;
   padding-bottom: 200px;
   background-color: var(--footer-bg-color);
+  background-image: url(../images/);
   text-align: center;
 }
 
@@ -361,17 +362,22 @@ span {
 /*-----------------FOOTER----------------- */
 footer {
   background-color: var(--footer-bg-color);
-  padding: 60px;
 }
 
+.footer-container{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .footer-logo {
+  
+  color: var(--color-white);
   font-family: 'Raleway';
   font-weight: 700;
-   font-size:  26px;
-  line-height:  1.17;
-  color: var(--color-white);
+  font-size: 26px;
+  line-height: 1.2;
 }
+
 
 address {
   font-style: normal;
@@ -452,8 +458,7 @@ margin-bottom: 50px;
 } 
 
 .portfolio-card {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 24px 20px 24px;
   border: 1px solid #EEEEEE;
   border-top: 0;
 }
